@@ -10,7 +10,7 @@ call plug#end()
 
 " map leader to space
 let mapleader = " "
-set number                 
+set number
 
 colorscheme material
 let g:lightline = { 'colorscheme': 'material_vim' }
@@ -48,11 +48,13 @@ nnoremap <C-n> :NERDTree<CR>
 nnoremap <C-t> :NERDTreeToggle<CR>
 nnoremap <C-f> :NERDTreeFind<CR>
 
-" Spaces & Tabs {{{
+" Spaces & Tabs
 set tabstop=2       " number of visual spaces per TAB
 set softtabstop=2   " number of spaces in tab when editing
 set shiftwidth=2    " number of spaces to use for autoindent
 set expandtab       " tabs are space
 set autoindent
 set copyindent      " copy indent from the previous line
-" }}} Spaces & Tabs
+
+set cursorcolumn
+set cursorline
